@@ -4,12 +4,12 @@
         <validation-errors :errors="validationErrors" v-if="validationErrors"></validation-errors>
     <div class="col-md-12">
      <form @submit.prevent="agregar">
-      <h3 style="font-weight:bold;">Agregar usuarios</h3>
+      <h3 style="font-weight:bold;">Agregar/Editar usuario</h3>
       <input type="text" class="form-control mb-2"
         placeholder="Nombre del usuario" v-model="contact.name">
       <input type="text" class="form-control mb-2"
         placeholder="Correo del usuario" v-model="contact.email">
-      <button class="btn btn-primary" @click="saveOrUpdate()" type="submit">Agregar</button>
+      <button class="btn btn-primary" @click="saveOrUpdate()" type="submit">Agregar/Editar</button>
     </form>
       <h1 style="font-weight:bold;">Lista de usuarios</h1>
       <div class="d-flex justify-content-center" v-if="loading">
